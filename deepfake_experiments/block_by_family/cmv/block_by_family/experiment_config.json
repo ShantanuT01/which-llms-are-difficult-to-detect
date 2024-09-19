@@ -1,0 +1,36 @@
+{
+    "model_name": "distilroberta-base",
+    "loss_fn": "CompositionalAUCLoss",
+    "loss_fn_args": {
+        "version": "v2"
+    },
+    "device": "cuda",
+    "optimizer": "PDSCA",
+    "optimizer_args": {
+        "lr": 0.02
+    },
+    "needs_sampler": true,
+    "needs_index": false,
+    "max_len": 512,
+    "training_args": {
+        "epochs": 1,
+        "batch_size": 32,
+        "shuffle": false,
+        "sampling_rate": 0.5
+    },
+    "train_dataset": {
+        "file_path": "/kaggle/input/deepfake-subset/cmv_train.csv",
+        "text_col": "text",
+        "label_col": "label"
+    },
+    "test_dataset": {
+        "file_path": "/kaggle/input/deepfake-subset/cmv_test.csv",
+        "text_col": "text",
+        "label_col": "label"
+    },
+    "stratify_by": "family",
+    "always_include": [
+        "human"
+    ],
+    "save_dir": "block_by_family"
+}
