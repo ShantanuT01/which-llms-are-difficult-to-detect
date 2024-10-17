@@ -6,6 +6,7 @@ This provides the source code for our paper.
 The `datasets/` folder contains the data for the two datasets used in our paper - Deepfake and RIP.
 The `test_with_statistics.csv` contains test data with several statistics computed from the `textdescriptives` library.
 
+The RIP Dataset can also be found on [HuggingFace Datasets](https://huggingface.co/datasets/ShantanuT01/RIP-Dataset). 
 ## Helper Code
 This can be found in the `libauc_training` directory. This includes the `TextDataset`  `LibAUCTrainer`, `Experiment` classes. For example usage, see an example Jupyter notebook that uses the `Experiment` class. 
 
