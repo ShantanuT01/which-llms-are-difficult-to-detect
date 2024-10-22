@@ -1,6 +1,6 @@
 # Which LLMs are Difficult to Detect? 
 
-This provides the source code for our paper. 
+This provides the source code for our [paper](https://arxiv.org/abs/2410.14875). 
 
 ## Datasets
 The `datasets/` folder contains the data for the two datasets used in our paper - Deepfake and RIP.
@@ -16,4 +16,18 @@ Models can be found in the latest GitHub release as assets.
 
 ## Interpreting Results
 The `auc_scores.csv` and `ap_scores.csv` file reports the respective metric based on the blocking factor (LLM model or LLM family). The `factor` column maps to the <i>test set</i> while individual columns correspond to the classifier with a training set containing all texts with that specific factor. 
+
+## Citing
+```bibtex
+@misc{
+  thorat2024llmsdifficultdetectdetailed,
+  title={Which LLMs are Difficult to Detect? A Detailed Analysis of Potential Factors Contributing to Difficulties in LLM Text Detection}, 
+  author={Shantanu Thorat and Tianbao Yang},
+  year={2024},
+  eprint={2410.14875},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2410.14875},
+}
+```
 
